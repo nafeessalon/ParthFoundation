@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Parth Foundation</title>
+    <link rel="icon" href="https://github.com/laraibhussain1109/image/blob/main/logo_parth-modified.png?raw=true" type="image/x-icon">
+</head>
+<body class="bg-gray-100">
+    <div class="bg-gray-100">
+
+        <div class="h-screen flex overflow-hidden bg-gray-200">
+            <!-- Sidebar -->
+            <div class="absolute bg-gray-800 text-white w-56 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-300"
+                id="sidebar">
+                <!-- Your Sidebar Content -->
+                <div class="p-4">
+                    <h1 class="text-2xl font-semibold">Donate Today!</h1>
+                    <ul class="mt-4">
+                        <li class="mb-2"><a href="index.html" class="block hover:text-indigo-400">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="block hover:text-indigo-400">About</a></li>
+                        <li class="mb-2"><a href="donate.html" class="block hover:text-indigo-400">Donate Now</a></li>
+                        <li class="mb-2"><a href="contact.html" class="block hover:text-indigo-400">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Content -->
+            <div class="flex-1 flex flex-col overflow-hidden">
+                <!-- Navbar -->
+                <div class="bg-white shadow">
+                    <div class="container mx-auto">
+                        <div class="flex justify-between items-center py-4 px-2">  <img src="https://github.com/laraibhussain1109/image/blob/main/logo_parth-modified.png?raw=true" alt="logo" class="w-10 h-10 text-white rounded-full"/>
+                            <h1 class="text-xl font-semibold font-style: italic text-blue-500"> Parth Foundation</h1>
+    
+                            <button class="text-gray-500 hover:text-gray-600" id="open-sidebar">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Body -->
+                <div class="flex-1 overflow-auto p-4">
+                    <section class="text-gray-600 body-font">
+                        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"> Hope Anchors Our Cause
+                              <br class="hidden lg:inline-block">
+                            </h1>
+                            <p class="mb-8 leading-relaxed">Parth Foundation is a non-profit organization that has been working since 2024. Our mission is to support various vulnerable groups, including the poor, destitute, orphans, widows, and children.</p>
+                            <div class="flex justify-center">
+                              <button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg" onclick="displayGreeting()">Learn More</button>
+                              <!-- <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Not Now</button> -->
+                            </div>
+                          </div>
+                          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                            <img class="object-cover object-center rounded" alt="hero" src="https://github.com/laraibhussain1109/image/blob/main/IMG-20240510-WA0011.jpg?raw=true">
+                          </div>
+                        </div>
+                  </section>
+                  <section class="text-gray-600 body-font">
+                    <div class="container px-6 py-24 mx-auto">
+                      <div class="flex flex-wrap w-full mb-20">
+                        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Join the journey, be the change</h1>
+                          <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                        </div>
+                        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">We believe in making good everyday</p>
+                      </div>
+                      
+                      
+                      <div class="flex flex-wrap -m-4">
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                          <div class="bg-gray-100 p-6 rounded-lg">
+                            <img id="cardImageb" class="h-40 rounded w-full object-cover object-center mb-6" src="https://github.com/laraibhussain1109/image/blob/main/WhatsApp%20Image%202024-05-10%20at%2019.46.34_3f542052.jpg?raw=true" alt="content">
+                            <h3 class="tracking-widest text-blue-500 text-xs font-medium title-font">Get upto 5% extra off</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Donate Books</h2>
+                            <p class="leading-relaxed text-base">At Parth Foundation, we firmly believe that every child deserves the opportunity to learn, dream, and realize their full potential. Yet, in India, poverty and adversity often rob millions of these chances, leaving desks empty and aspirations silenced. That's where our education initiative,  steps in, bridging the divide and igniting lives with the transformative power of knowledge.
+
+                              Here's how we make a difference:
+                              
+                              Empowering Dropouts: We extend a lifeline to children compelled to leave school due to financial struggles, guiding them back onto the path of education and towards their dreams.
+                              Unlocking Potential for Underprivileged Children: Regardless of their backgrounds, every child deserves access to quality education. Through Shiksha, we ensure they receive equitable opportunities, nurturing their potential and fostering their growth.
+                              Freeing Minds from Financial Burdens: We believe education should not be a privilege but a right. Shiksha offers free tuition to school-going children from economically challenged families, eliminating financial barriers that could hinder their academic journey.
+                              Together, we can achieve the following:
+                              
+                              Breaking the Cycle of Poverty: Education empowers individuals to transcend limitations, fostering a ripple effect of positive change for generations to come.
+                              Leveling the Playing Field: By ensuring equal access to education, we strive to create a society where every child has the chance to thrive, irrespective of their background.
+                              Building a Brighter Future: Investing in education is investing in the future of our nation. By equipping the next generation with knowledge and skills, we pave the way for a stronger, more prosperous India.
+                              You can join the Shiksha movement by:
+                              
+                              Donating: Every contribution aids us in providing scholarships, supporting educators, and creating an environment where every child can flourish.
+                              Volunteering: Share your expertise, skills, or time to mentor children, conduct workshops, or fundraise for our cause.
+                              Spreading Awareness: Advocate for the significance of education and inspire others to join us in shaping a brighter future.
+                              With your invaluable support, we can transform empty classrooms into vibrant hubs of learning, fill young minds with wisdom, and empower underprivileged children to script their own narratives of triumph.</p>
+                              <button class="read-more">Read More</button>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                          <div class="bg-gray-100 p-6 rounded-lg">
+                            <img id="cardImage" class="h-40 rounded w-full object-cover object-center mb-6" src="https://github.com/laraibhussain1109/image/blob/main/IMG-20240510-WA0030.jpg?raw=true" alt="content">
+                            <h3 class="tracking-widest text-blue-500 text-xs font-medium title-font">Get upto 3% off</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Donate Food</h2>
+                            <p class="leading-relaxed text-base">In India, the shadows of hunger loom large over the lives of millions of children, robbing them of energy, stunting their growth, and dimming their hopes. At Parth Foundation, we refuse to let hunger win. That's why we've launched Anndaan Yojna, a campaign dedicated to ensuring that every child has access to a nutritious meal, no matter where they live.
+
+                              Here's our approach:
+                              
+                              Understanding the Need: We collaborate closely with local communities and partner organizations to identify children who are most vulnerable to chronic hunger and malnutrition. Through partnerships with schools, orphanages, and community leaders, we ensure that our efforts reach those who need it most.
+                              Providing Balanced Meals: Our meals are carefully crafted to meet the specific nutritional needs of children, delivering essential vitamins and minerals vital for their growth and development. Prepared with hygiene and safety as top priorities, our meals are culturally appropriate and tailored to different age groups.
+                              Beyond Food: We believe that food is more than just sustenance; it's a catalyst for growth and opportunity. That's why our Plate of Hope campaign goes beyond simply providing meals. We organize educational workshops on nutrition, hygiene, and healthy eating habits, as well as engaging activities to create a positive community environment for children.
+                              Measuring Impact: We regularly monitor and evaluate the impact of Plate of Hope. By tracking changes in children's health, nutrition levels, school attendance, and overall well-being, we ensure that our efforts are making a tangible difference in their lives.
+                              Join the Anndaan yojna  :
+                              
+                              Your support for  Anndaan yojna isn't just about providing a meal; it's an investment in a child's future. Every donation, no matter the size, helps us fill empty plates and bring hope to empty lives. Whether you choose to donate, volunteer, or simply spread the word, your contribution can help us create a world where every child has the nourishment they need to thrive.</p>
+                              <button class="read-more">Read More</button>
+                            </div>
+                            
+                          </div>
+                        
+                    
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                          <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://source.unsplash.com/722x402/?Donate,clothes" alt="content">
+                            <h3 class="tracking-widest text-blue-500 text-xs font-medium title-font">Get upto 7% off</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Donate clothes </h2>
+                            <p class="leading-relaxed text-base">In India, the shadows of hunger loom large over the lives of millions of children, robbing them of energy, stunting their growth, and dimming their hopes. At Parth Foundation, we refuse to let hunger win. That's why we've launched Anndaan Yojna, a campaign dedicated to ensuring that every child has access to a nutritious meal, no matter where they live.
+
+                              Here's our approach:
+                              
+                              Understanding the Need: We collaborate closely with local communities and partner organizations to identify children who are most vulnerable to chronic hunger and malnutrition. Through partnerships with schools, orphanages, and community leaders, we ensure that our efforts reach those who need it most.
+                              Providing Balanced Meals: Our meals are carefully crafted to meet the specific nutritional needs of children, delivering essential vitamins and minerals vital for their growth and development. Prepared with hygiene and safety as top priorities, our meals are culturally appropriate and tailored to different age groups.
+                              Beyond Food: We believe that food is more than just sustenance; it's a catalyst for growth and opportunity. That's why our Plate of Hope campaign goes beyond simply providing meals. We organize educational workshops on nutrition, hygiene, and healthy eating habits, as well as engaging activities to create a positive community environment for children.
+                              Measuring Impact: We regularly monitor and evaluate the impact of Plate of Hope. By tracking changes in children's health, nutrition levels, school attendance, and overall well-being, we ensure that our efforts are making a tangible difference in their lives.
+                              Join the Anndaan yojna  :
+                              
+                              Your support for  Anndaan yojna isn't just about providing a meal; it's an investment in a child's future. Every donation, no matter the size, helps us fill empty plates and bring hope to empty lives. Whether you choose to donate, volunteer, or simply spread the word, your contribution can help us create a world where every child has the nourishment they need to thrive.</p>
+                            <button class="read-more">Read More</button>
+                          </div>
+                        </div>
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                          <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://source.unsplash.com/723x403/?East Asia,travel" alt="content">
+                            <h3 class="tracking-widest text-blue-500 text-xs font-medium title-font">Get upto 1.5% off</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Donate Blood</h2>
+                            <p class="leading-relaxed text-base">In India, the shadows of hunger loom large over the lives of millions of children, robbing them of energy, stunting their growth, and dimming their hopes. At Parth Foundation, we refuse to let hunger win. That's why we've launched Anndaan Yojna, a campaign dedicated to ensuring that every child has access to a nutritious meal, no matter where they live.
+
+                              Here's our approach:
+                              
+                              Understanding the Need: We collaborate closely with local communities and partner organizations to identify children who are most vulnerable to chronic hunger and malnutrition. Through partnerships with schools, orphanages, and community leaders, we ensure that our efforts reach those who need it most.
+                              Providing Balanced Meals: Our meals are carefully crafted to meet the specific nutritional needs of children, delivering essential vitamins and minerals vital for their growth and development. Prepared with hygiene and safety as top priorities, our meals are culturally appropriate and tailored to different age groups.
+                              Beyond Food: We believe that food is more than just sustenance; it's a catalyst for growth and opportunity. That's why our Plate of Hope campaign goes beyond simply providing meals. We organize educational workshops on nutrition, hygiene, and healthy eating habits, as well as engaging activities to create a positive community environment for children.
+                              Measuring Impact: We regularly monitor and evaluate the impact of Plate of Hope. By tracking changes in children's health, nutrition levels, school attendance, and overall well-being, we ensure that our efforts are making a tangible difference in their lives.
+                              Join the Anndaan yojna  :
+                              
+                              Your support for  Anndaan yojna isn't just about providing a meal; it's an investment in a child's future. Every donation, no matter the size, helps us fill empty plates and bring hope to empty lives. Whether you choose to donate, volunteer, or simply spread the word, your contribution can help us create a world where every child has the nourishment they need to thrive.</p>
+                            <button class="read-more">Read More</button>
+                          </div>
+                        </div>
+                      </div>
+</div>
+
+                    </div>
+                  </section>
+                </div>
+            </div>
+        </div>
+
+    
+        <script>
+            const sidebar = document.getElementById('sidebar');
+        const openSidebarButton = document.getElementById('open-sidebar');
+        
+        openSidebarButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            sidebar.classList.toggle('-translate-x-full');
+        });
+    
+        // Close the sidebar when clicking outside of it
+        document.addEventListener('click', (e) => {
+            if (!sidebar.contains(e.target) && !openSidebarButton.contains(e.target)) {
+                sidebar.classList.add('-translate-x-full');
+            }
+        });
+        </script>
+
+        <script>
+      const cardTexts = document.querySelectorAll(".leading-relaxed.text-base");
+const readMoreButtons = document.querySelectorAll(".read-more");
+
+readMoreButtons.forEach((readMoreButton, index) => {
+  readMoreButton.addEventListener('click', () => {
+    const cardText = cardTexts[index];
+    cardText.classList.toggle('expanded');
+    readMoreButton.textContent = cardText.classList.contains('expanded') ? 'Read Less' : 'Read More';
+  });
+});
+
+function displayGreeting() {
+  var date = new Date();
+  var hours = date.getHours();
+  var greeting;
+
+  if (hours < 12) {
+    greeting = "Good Morning! Welcome to Parth foundation where we're on a mission to make sure everyone has access to food and education. We believe that these basic necessities are fundamental to living a happy and fulfilling life.";
+  } else if (hours < 18) {
+    greeting = "Good Afternoon! Welcome to Parth foundation where we're on a mission to make sure everyone has access to food and education. We believe that these basic necessities are fundamental to living a happy and fulfilling life.";
+  } else {
+    greeting = "Good Evening! Welcome to Parth foundation where we're on a mission to make sure everyone has access to food and education. We believe that these basic necessities are fundamental to living a happy and fulfilling life.";
+  }
+
+  alert(greeting);
+}
+
+var images = ['https://github.com/laraibhussain1109/image/blob/main/IMG-20240510-WA0030.jpg?raw=true', 'https://github.com/laraibhussain1109/image/blob/main/food.jpg?raw=true', 'https://github.com/laraibhussain1109/image/blob/main/IMG-20240510-WA0017.jpg?raw=true', 'https://github.com/laraibhussain1109/image/blob/main/IMG-20240510-WA0026.jpg?raw=true'];  // replace with your image URLs
+    var index = 0;
+
+    setInterval(function() {
+        index = (index + 1) % images.length;
+        document.getElementById('cardImage').src = images[index];
+    }, 5000);
+
+    var images1 = ['https://github.com/laraibhussain1109/image/blob/main/WhatsApp%20Image%202024-05-10%20at%2019.46.15_97cf5278.jpg?raw=true', 'https://github.com/laraibhussain1109/image/blob/main/IMG-20240510-WA0022.jpg?raw=true', 'https://github.com/laraibhussain1109/image/blob/main/IMG-20240510-WA0012.jpg?raw=true', 'https://github.com/laraibhussain1109/image/blob/main/IMG-20240510-WA0025.jpg?raw=true'];  // replace with your image URLs
+    var index1 = 0;
+
+    setInterval(function() {
+        index1 = (index1 + 1) % images1.length;
+        document.getElementById('cardImageb').src = images1[index1];
+    }, 5000);
+        </script>
+
+<style>
+  .leading-relaxed.text-base {
+    height: 30px;
+    overflow: hidden;
+    transition: height 0.5s;
+  }
+
+  .leading-relaxed.text-base.expanded {
+    height: auto;
+  }
+
+
+</style>
+    
+    </div>
+</body>
+</html>
